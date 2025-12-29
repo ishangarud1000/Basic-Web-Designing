@@ -1,0 +1,18 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>File Section</title>
+<script>
+function showFilename() {
+var fileInput = document.getElementById("file");
+var fileName= fileInput.files[0].name;
+document.getElementById("result").innerHTML="Selected File:" + fileName;
+}
+</script>
+</head>
+<body>
+<h3>Select a file</h3>
+<input type="file" id="file" onchange="showFilename()">
+<p id="result"></p>
+</body>
+</html>
